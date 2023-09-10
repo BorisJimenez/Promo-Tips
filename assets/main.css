@@ -1,0 +1,24 @@
+:root{
+    --primary-100:#00BFA5;
+    --primary-200:#00a189;
+    --primary-300:#005f4b;
+    --accent-100:#00E5FF;
+    --accent-200:#00829b;
+    --text-100:#333333;
+    --text-200:#5c5c5c;
+    --bg-100:#E6F8E0;
+    --bg-200:#dceed6;
+    --bg-300:#b4c5ae;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+    
