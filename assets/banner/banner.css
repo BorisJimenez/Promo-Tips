@@ -1,0 +1,28 @@
+.banner {
+    padding: 2rem 1rem;
+    background: var(--bg-200);
+    text-align: center;
+}
+
+.banner h1 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: var(--text-200);
+}
+
+.banner p {
+    font-size: 1.2rem;
+    color: var(--text-200);
+}
+
+.banner button {
+    padding: 1rem;
+    border-radius: 20px;
+    background: var(--accent-200);
+    color: var(--bg-300);
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    box-shadow: 4px 4px var(--bg-300);
+    cursor: pointer;
+}
