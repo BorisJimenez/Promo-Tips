@@ -8,9 +8,8 @@
     <link rel="stylesheet" href="assets/main.css">
     <link rel="stylesheet" href="assets/reset.css">
     <link rel="stylesheet" href="assets/header/header.css">
-    <link rel="stylesheet" href="assets/banner/banner.css">
     <link rel="stylesheet" href="assets/footer/footer.css">
-    <link rel="stylesheet" href="articulos/articulos.css">
+    <link rel="stylesheet" href="assets/proyecto/proyecto.css">
 </head>
 <body>
     <header class="header">
@@ -27,8 +26,41 @@
             </ul> 
         </nav>
     </header>
-    <main>
-        
+    <main class="proyecto">
+        <div class="proyecto-encabezado">
+            <h2>proyecto</h2>
+            <p>Aquí, te ofrecemos la oportunidad de crear un proyecto de promoción empresarial a medida, perfectamente alineado con la normativa en Bolivia. Simplemente proporciona algunos datos generales y, como resultado, generaremos un proyecto personalizado que te ayudará a dar vida a tus estrategias promocionales de manera efectiva y cumpliendo con todas las regulaciones necesarias. ¡Estamos emocionados de trabajar contigo para lograr el éxito de tu promoción empresarial!</p>
+        </div>
+        <form action="" class="proyecto-formulario">
+            <label for="nombre-promocion">a) Nombre de la Propmoción Empresarial</label>
+            <input type="text" name="nombre-promocion" required>
+            <label for="fecha-inicio">Fecha de Inicio</label>
+            <input type="date" name="fecha-inicio" required>
+            <label for="fecha-fin">Fecha de Finalización</label>
+            <input type="date" name="fecha-fin" required>
+            <label for="modalidad">Modalidad de Premiación</label>
+            <input type="text" name="modalidad" required>
+            <label for="participantes">Quienes son los participantes</label>
+            <input type="text" name="participantes" required> 
+            <label for="condiciones">Que tienen que hacer para participar</label>
+            <textarea name="condiciones" id="" cols="30" rows="10" placeholder="Escribe aqui las condiciones de tu promoción"></textarea>
+            <label for="definicion">Como se identifica a los ganadores</label>
+            <textarea name="definicion" id="" cols="30" rows="10" placeholder="Escribe aqui como se define a los ganadores"></textarea>
+            <label for="sorteo">Lugar de sorteo o azar</label>
+            <input type="text" name="sorteo" required>
+            <label for="sorteo-fecha">Fecha de sorteo o azar</label>
+            <input type="date" name="sorteo-fecha" required>
+            <label for="entrega">Lugar de entrega de premios</label>
+            <input type="text" name="entrega" required>
+            <label for="entrega-fecha">Fecha de entrega de premios</label>
+            <input type="date" name="entrega-fecha" required>
+            <label for="premio">Premio Ofertado</label>
+            <input type="number" name="premio" placeholder="Cantidad" required>
+            <input type="text" name="premio" placeholder="Descripción del premio" required>
+            <input type="number" name="premio" placeholder="Precio Unitario" required>
+            <input type="number" name="premio" placeholder="Valor Total" required>
+            <button>Enviar</button>
+        </form>
     </main>
     <footer>
         <h3>Derechos Reservados - Promo-Tips</h3>

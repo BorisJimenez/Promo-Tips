@@ -1,0 +1,60 @@
+.proyecto-encabezado {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.proyecto-encabezado h2 {
+    text-transform: uppercase;
+    color: var(--accent-200);
+    align-self: center;
+}
+
+.proyecto-encabezado p {
+    text-align: justify;
+    color: var(--text-200);
+}
+
+.proyecto-formulario {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.proyecto-formulario label{
+    background: var(--bg-300);
+    border-radius: 5px 5px 0 0;
+    padding: 1rem;
+    border: none;
+    color: var(--text-200);
+}
+
+.proyecto-formulario input{
+    margin-bottom: 1rem;
+    border: none;
+    background: var(--bg-300);
+    border-radius: 0 0 5px 5px;
+    padding: 1rem;
+    color: var(--text-200);
+}
+
+.proyecto-formulario button {
+    padding: 1rem;
+    border-radius: 20px;
+    background: var(--accent-200);
+    color: var(--bg-300);
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    box-shadow: 4px 4px var(--bg-300);
+    cursor: pointer;
+}
+
+.proyecto-formulario textarea{
+    margin-bottom: 1rem;
+    border: none;
+    background: var(--bg-300);
+    border-radius: 0 0 5px 5px;
+    padding: 1rem;
+    color: var(--text-200);
+}
