@@ -29,7 +29,7 @@
     color: var(--text-200);
 }
 
-.contacto-formulario input{
+.input{
     margin-bottom: 1rem;
     border: none;
     background: var(--bg-300);
@@ -38,7 +38,7 @@
     color: var(--text-200);
 }
 
-.contacto-formulario button {
+.contacto-boton {
     padding: 1rem;
     border-radius: 20px;
     background: var(--accent-200);

@@ -31,15 +31,15 @@
             <h2>contactanos</h2>
             <p>Si tienes preguntas o necesitas asesoramiento para obtener autorizaciones de promociones empresariales en Bolivia, estamos aquí para ayudarte. ¡Contáctanos! Estamos listos para brindarte la orientación que necesitas. Tu éxito es importante para nosotros.</p>
         </div>
-        <form action="" class="contacto-formulario">
+        <form class="contacto-formulario" onsubmit="return validarFormulario()">
             <label for="nombre">Nombre Completo</label>
-            <input type="text" name="nombre" required>
+            <input type="text" name="nombre" id="nombre" class="input" required>
             <label for="telefono">Teléfono</label>
-            <input type="number" name="telefono" required>
+            <input type="number" name="telefono" id="telefono" class="input" required>
             <label for="email">E-mail</label>
-            <input type="email" name="email" required> 
-            <textarea name="" id="" cols="30" rows="10" placeholder="Escribe tu mensaje aqui"></textarea>
-            <button>Enviar</button>
+            <input type="email" name="email" id="email" class="input" required> 
+            <textarea name="" id="mensaje" cols="30" rows="10" placeholder="Escribe tu mensaje aqui"></textarea>
+            <input type="submit" value="enviar" class="contacto-boton">
         </form>
     </main>
     <footer>
