@@ -31,35 +31,35 @@
             <h2>proyecto</h2>
             <p>Aquí, te ofrecemos la oportunidad de crear un proyecto de promoción empresarial a medida, perfectamente alineado con la normativa en Bolivia. Simplemente proporciona algunos datos generales y, como resultado, generaremos un proyecto personalizado que te ayudará a dar vida a tus estrategias promocionales de manera efectiva y cumpliendo con todas las regulaciones necesarias. ¡Estamos emocionados de trabajar contigo para lograr el éxito de tu promoción empresarial!</p>
         </div>
-        <form action="" class="proyecto-formulario">
+        <form class="proyecto-formulario" onsubmit="return crearProyecto()">
             <label for="nombre-promocion">Nombre de la Propmoción Empresarial</label>
-            <input type="text" name="nombre-promocion" required>
+            <input type="text" id="nombre-promocion" name="nombre-promocion" required>
             <label for="fecha-inicio">Fecha de Inicio</label>
-            <input type="date" name="fecha-inicio" required>
+            <input type="date" id="fecha-inicio" name="fecha-inicio" required>
             <label for="fecha-fin">Fecha de Finalización</label>
-            <input type="date" name="fecha-fin" required>
+            <input type="date" id="fecha-fin" name="fecha-fin" required>
             <label for="modalidad">Modalidad de Premiación</label>
-            <input type="text" name="modalidad" required>
+            <input type="text" id="modalidad" name="modalidad" required>
             <label for="participantes">Quienes son los participantes</label>
-            <input type="text" name="participantes" required> 
+            <input type="text" id="participantes" name="participantes" required> 
             <label for="condiciones">Que tienen que hacer para participar</label>
-            <textarea name="condiciones" id="" cols="30" rows="10" placeholder="Escribe aqui las condiciones de tu promoción"></textarea>
+            <textarea name="condiciones" id="condiciones" cols="30" rows="10" placeholder="Escribe aqui las condiciones de tu promoción"></textarea>
             <label for="definicion">Como se identifica a los ganadores</label>
-            <textarea name="definicion" id="" cols="30" rows="10" placeholder="Escribe aqui como se define a los ganadores"></textarea>
+            <textarea name="definicion" id="definicion" cols="30" rows="10" placeholder="Escribe aqui como se define a los ganadores"></textarea>
             <label for="sorteo">Lugar de sorteo o azar</label>
-            <input type="text" name="sorteo" required>
+            <input type="text" id="sorteo" name="sorteo" required>
             <label for="sorteo-fecha">Fecha de sorteo o azar</label>
-            <input type="date" name="sorteo-fecha" required>
+            <input type="date" id="sorteo-fecha" name="sorteo-fecha" required>
             <label for="entrega">Lugar de entrega de premios</label>
-            <input type="text" name="entrega" required>
+            <input type="text" id="entrega" name="entrega" required>
             <label for="entrega-fecha">Fecha de entrega de premios</label>
-            <input type="date" name="entrega-fecha" required>
+            <input type="date" id="entrega-fecha" name="entrega-fecha" required>
             <label for="premio">Premio Ofertado</label>
-            <input type="number" name="premio" placeholder="Cantidad" required>
-            <input type="text" name="premio" placeholder="Descripción del premio" required>
-            <input type="number" name="premio" placeholder="Precio Unitario" required>
-            <input type="number" name="premio" placeholder="Valor Total" required>
-            <button>Enviar</button>
+            <input type="number" id="premio-cantidad" name="premio" placeholder="Cantidad" required>
+            <input type="text" id="premio-descripcion" name="premio" placeholder="Descripción del premio" required>
+            <input type="number" id="premio-precio" name="premio" placeholder="Precio Unitario" required>
+            <input type="number" id="premio-valor" name="premio" placeholder="Valor Total" required>
+            <input type="submit" value="enviar" class="contacto-boton">
         </form>
     </main>
     <footer>
