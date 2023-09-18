@@ -39,25 +39,29 @@ function crearProyecto() {
     const premioValor = document.getElementById('premio-valor').value.trim();
 
     if (nombrePromocion === '' || fechaInicio === '' || fechaFin === '' || modalidad === '' || participantes === '' || condiciones === '' || definicion === '' || sorteo === '' || sorteoFecha === '' || entrega === '' || entregaFecha === '' || premioCantidad === '' || premioDescripcion === '' || premioPrecio === '' || premioValor === ''){
-        console.log("Por favor, completa todos los campos.");
+        document.getElementById('resultado').innerHTML = "Por favor, completa todos los campos.";
         return false;
     }
 
-    console.log(`a) Nombre de la Promoción Empresarial: ${nombrePromocion}`);
-    console.log(`b) Periodo de Duración: La presente promoción empresarial tiene como fecha de inicio el ${fechaInicio} y como fecha de finalizacion el ${fechaFin}`)
-    console.log(`c) Modalidad de Premiación: 
-    La presente promoción empresarial se encuentra bajo la modalidad ${modalidad}.
-    Las personas que podran participar de la promocion empresarial son ${participantes}, quienes deben cumplir con las siguientes condiciones para poder participar:
-    ${condiciones}.
-    Los participantes que resulten ganadores seran seleccionados de la siguiente manera:
-    ${definicion}.`)
-    console.log(`d) Lugar y Fecha de Sorteo: El sorteo se llevará a cabo en ${sorteo} en fecha ${sorteoFecha}.`)
-    console.log(`e) Lugar y Fecha de Entrega de Premios: La Entrega de Premios se llevará a cabo en ${entrega} en fecha ${entregaFecha}.`)
-    console.log(`f) Premios Ofertados: Para la presente promocion empresarial se ofertan ${premioCantidad} premios, consistentes en ${premioDescripcion}, cada uno con un precio de Bs${premioPrecio}, haciendo un total de Bs${premioValor}`)
+    // Construye el resultado
+    const resultadoHTML = `
+        <p>a) Nombre de la Promoción Empresarial: ${nombrePromocion}</p>
+        <p>b) Periodo de Duración: La presente promoción empresarial tiene como fecha de inicio el ${fechaInicio} y como fecha de finalización el ${fechaFin}</p>
+        <p>c) Modalidad de Premiación: 
+            La presente promoción empresarial se encuentra bajo la modalidad ${modalidad}.
+            Las personas que podrán participar de la promoción empresarial son ${participantes}, quienes deben cumplir con las siguientes condiciones para poder participar:
+            ${condiciones}.
+            Los participantes que resulten ganadores serán seleccionados de la siguiente manera:
+            ${definicion}.
+        </p>
+        <p>d) Lugar y Fecha de Sorteo: El sorteo se llevará a cabo en ${sorteo} en fecha ${sorteoFecha}.</p>
+        <p>e) Lugar y Fecha de Entrega de Premios: La Entrega de Premios se llevará a cabo en ${entrega} en fecha ${entregaFecha}.</p>
+        <p>f) Premios Ofertados: Para la presente promoción empresarial se ofertan ${premioCantidad} premios, consistentes en ${premioDescripcion}, cada uno con un precio de Bs${premioPrecio}, haciendo un total de Bs${premioValor}</p>
+    `;
+
+    // Actualiza el contenido del div 'resultado'
+    document.getElementById('resultado').innerHTML = resultadoHTML;
+
     return true; // El formulario se enviará si todo está bien
-
-
-    
-
 
 }
