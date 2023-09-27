@@ -29,25 +29,13 @@
     color: var(--text-200);
 }
 
-.proyecto-formulario input{
+.input{
     margin-bottom: 1rem;
     border: none;
     background: var(--bg-300);
     border-radius: 0 0 5px 5px;
     padding: 1rem;
     color: var(--text-200);
-}
-
-.proyecto-formulario button {
-    padding: 1rem;
-    border-radius: 20px;
-    background: var(--accent-200);
-    color: var(--bg-300);
-    font-size: 1.2rem;
-    font-weight: bold;
-    border: none;
-    box-shadow: 4px 4px var(--bg-300);
-    cursor: pointer;
 }
 
 .proyecto-formulario textarea{
@@ -59,3 +47,21 @@
     color: var(--text-200);
 }
 
+.proyecto-boton {
+    padding: 1rem;
+    border-radius: 20px;
+    background: var(--accent-200);
+    color: var(--bg-300);
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    box-shadow: 4px 4px var(--bg-300);
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1024px) {
+    .proyecto-formulario{
+        width: 60%;
+        align-self: center;
+    }
+}

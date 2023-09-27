@@ -58,3 +58,10 @@
     padding: 1rem;
     color: var(--text-200);
 }
+
+@media screen and (min-width: 1024px) {
+    .contacto-formulario{
+        width: 60%;
+        align-self: center;
+    }
+}
